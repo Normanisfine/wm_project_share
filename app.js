@@ -65,9 +65,9 @@ function renderSelection(){
     const marker=document.createElement('button');marker.className='timeline-marker';marker.style.left=`${step/row.steps*100}%`;marker.setAttribute('aria-label',`Seek to first attainment of ${i+1} supported objects at ${time(step)}`);marker.addEventListener('click',seek);$('timeline').append(marker);
     const label=document.createElement('button');label.textContent=`${i+1} object${i?'s':''} · ${time(step)}`;label.addEventListener('click',seek);$('milestones').append(label);
   });
-  if(!row.stage_steps.length) $('milestones').textContent='No supported placement recorded during the primary rollout.';
-  if(row.success) $('episode-note').textContent=`All ${row.count} objects supported at ${time(row.steps)}. ${row.continuation.tower_damage?'Tower damage was observed':'The tower remained intact'} during the following ${time(row.continuation.controls)}.`;
-  else $('episode-note').textContent=`${row.final_count} supported object${row.final_count===1?'':'s'} at ${time(row.steps)}. ${row.max_placed?`Peak tower count: ${row.max_placed}.`:'No supported placement recorded.'} This log does not establish the cause of failure.`;
+  if(!row.stage_steps.length) $('milestones').textContent='No supported placement recorded.';
+  if(row.success) $('episode-note').textContent=`Success: ${time(row.steps)} · Continuation: ${time(row.continuation.controls)} · Tower damage: ${row.continuation.tower_damage?'observed':'not observed'}`;
+  else $('episode-note').textContent=`Termination: ${time(row.steps)} · Final: ${row.final_count}/${row.count} · Peak: ${row.max_placed}/${row.count}`;
   sceneMap(row);
 }
 
@@ -75,7 +75,7 @@ function renderRelease(){
   const data=state.release;
   const passed=data.episodes.filter(r=>r.success).length;
   const root=$('release-check');root.hidden=false;
-  root.innerHTML=`<div class="section-heading"><div><span class="eyebrow">CONTROL CHECK / RELEASED SCENES</span><h2>Does the original task still work?</h2></div><span class="quiet">Five supplied development scenes · four objects</span></div><div class="release-overview"><div class="release-score">${passed}<span style="font-size:24px;color:var(--muted)"> / ${data.episodes.length}</span></div><div class="release-copy">Complete towers on the first five scenes in the released development panel, using the same checkpoint and sampler. This is a separate original-task sanity check, not a paired generalization comparison or an independent final-test estimate.</div></div><div class="release-scenes"></div>`;
+  root.innerHTML=`<div class="section-heading"><div><span class="eyebrow">REFERENCE / RELEASE DEVELOPMENT PANEL</span><h2>Original-task validation</h2></div><span class="quiet">Five supplied development scenes · four objects</span></div><div class="release-overview"><div class="release-score">${passed}<span style="font-size:24px;color:var(--muted)"> / ${data.episodes.length}</span></div><div class="release-copy">Tower completions on the first five released development scenes; identical checkpoint and sampler. Evaluated separately from the generalization pilot.</div></div><div class="release-scenes"></div>`;
   const releaseSelect=$('release-scene');releaseSelect.replaceChildren();
   for(const row of data.episodes){
     const button=document.createElement('button');button.className=row.success?'passed':'not-passed';button.textContent=`${row.scene_seed} · ${row.success?'4/4 ✓':`${row.final_count}/4 timeout`}`;

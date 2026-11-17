@@ -4,3 +4,17 @@
 @media(max-width:1000px){.site-header,main,footer{padding-left:32px;padding-right:32px}.hero{gap:30px;grid-template-columns:1fr 230px}.hero-aside{padding-left:24px}.results-grid{gap:22px;grid-template-columns:1.6fr 1fr}.finding{padding-left:22px}.film-grid{grid-template-columns:1.6fr 1fr;gap:22px}.episode-panel{padding:18px}.brand-caption{display:none}.stats>div{padding-left:16px}.protocol-strip{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.site-header,main,footer{padding-left:22px;padding-right:22px}.site-header{height:80px;gap:15px}.header-note{display:none}nav{gap:18px;font-size:11px}.hero{padding:43px 0 35px;grid-template-columns:1fr}.hero-aside{display:none}h1{font-size:49px;letter-spacing:-2.7px}.hero-copy{font-size:14px}.stats{grid-template-columns:1fr 1fr;gap:22px 0}.stats>div:nth-child(3){border-left:0;padding-left:0}.stats strong{font-size:32px}.section{padding-top:43px}.section-heading{display:block;margin-bottom:20px}.section-heading>.quiet{display:block;margin-top:10px}.results-grid,.film-grid{grid-template-columns:1fr}.finding{border:0;border-top:1px solid var(--line);padding:23px 0 0}.finding h3 br{display:none}.finding p{max-width:550px}.finding-foot{margin-top:18px}.matrix{grid-template-columns:1.35fr repeat(3,1fr);gap:6px}.matrix-row{font-size:11px}.matrix-row small{font-size:8px}.matrix-legend{gap:12px;font-size:8px}.film-grid{gap:25px}.episode-panel{padding:22px}.scene-map svg{max-height:180px}.section-intro{margin-top:16px}.protocol-columns{grid-template-columns:1fr;gap:16px}.protocol-columns article{position:relative;padding-left:36px}.step-no{position:absolute;left:0;top:16px}.protocol-strip{gap:20px 12px}.limitations{grid-template-columns:1fr;gap:10px;padding:45px 0}.limitations h2 br{display:none}.details-content dl{grid-template-columns:1fr;gap:5px}.details-content dd{margin-bottom:10px}footer{flex-wrap:wrap;gap:16px}.brand-footer{width:100%}.release-overview{gap:20px}.release-score{font-size:38px}.release-scenes button{padding:9px}.player-bar{padding:12px;font-size:9px}.player-footer{font-size:8px}.small-link{font-size:8px}.camera-labels span{font-size:6px}.brand-footer span{margin-left:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Restrained report typography and compact findings. */
+h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-1.5px}
+h1{font-size:clamp(38px,4.5vw,60px);line-height:1.1}
+h2{font-size:30px;letter-spacing:-.6px}
+.hero{gap:45px;grid-template-columns:minmax(0,1fr) 270px;padding-top:52px;padding-bottom:43px}
+.hero-copy{max-width:520px;font-size:14px}
+.hero-aside p{font-family:var(--mono);font-size:20px;letter-spacing:-.5px}
+.findings-list{font-size:11px;margin:20px 0}
+.findings-list dt{color:var(--muted);margin-top:14px}
+.findings-list dd{margin:2px 0 0;font-weight:500}
+.finding h3{font-size:19px}
+.section{padding-top:48px}
+@media(max-width:700px){.hero{grid-template-columns:1fr;padding-top:36px}.hero h1{font-size:43px}.section{padding-top:36px}.hero-aside{display:none}}
