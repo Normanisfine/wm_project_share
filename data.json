@@ -1,0 +1,1683 @@
+{
+  "source_run": "rs-imle-first-video",
+  "protocol": {
+    "adapter": "none",
+    "batch_size": 1,
+    "checkpoint_sha256": "5b61bd48ef0bef312a119b37d6adacd29df2ca3c47bef6849f092692af4d40dc",
+    "continuation": 100,
+    "device": "cuda:0",
+    "egl_device": 0,
+    "hand_assets_sha256": "05b0798d6d90d0aa15ff06109cb1cc5c31b19b37f5fe515796666be8dfceb213",
+    "harness_sha256": "0ea8d59fa88826e1477d32992fe56d456ec18fab9821e4bfb7ed140d483789ef",
+    "horizon": 1795,
+    "options": {
+      "ensemble": false,
+      "execute_blocks": 1,
+      "flow_steps": 1,
+      "mode": "policy",
+      "noise_scale": 0.0,
+      "solver": "euler",
+      "time_shift": 1.0
+    },
+    "panel_sha256": "5f4d235e8c78c88a01bd94bfe71e3d240b7f3a91519d2b2cbc6a9d9384014525",
+    "policy": "rs-imle",
+    "renderer": "egl",
+    "resolution": 128,
+    "schema": "generalization-run-v1",
+    "source_commit": "dcaeef333aa530495c094435247309a15d3b4a8b",
+    "success_hold_controls": 10,
+    "video": true,
+    "video_every": 1,
+    "workers": 1
+  },
+  "status_counts": {
+    "completed": 15,
+    "invalid_scene": 0,
+    "runtime_error": 0,
+    "unsupported": 0
+  },
+  "episodes": [
+    {
+      "episode_id": "6200003-physical-n2-cluster",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n2-cluster",
+      "count": 2,
+      "layout": "cluster",
+      "slots": [
+        0,
+        1
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.33249959617762875,
+              -0.01800491700388196
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.19926842678730314,
+              -0.0025940442478706166
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "4ba62e5fe428309db1bf3d9a45a56c8f00610ae63f883fdaacaf2bd957761123",
+      "initial_state_sha256": "06fc513f50c66c85be33aad9b0ea017a4231c975fc89b21c2057191dc85de11c",
+      "action_sha256": "a602ae766acd16f9df452f64dafcc5b986f8800a517c9f80e2b988ca1ccea591",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n2-cluster-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n2-cluster-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n2-free",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n2-free",
+      "count": 2,
+      "layout": "free",
+      "slots": [
+        0,
+        1
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.3421601071321459,
+              0.1941255164833094
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.22148824449734064,
+              -0.07738356572251653
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "4584a54f9f14a2ddb39b0d8cf5e10f651124bd4a72f3ab095f5be2675d4d6a9b",
+      "initial_state_sha256": "878d042495d2f7c310b8dbea23c8c2831f8be8941e36df685febba7374be0243",
+      "action_sha256": "bd4535e97956f5ea1decb14116200c1871860040283f178598842a2fb9a2db3c",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n2-free-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n2-free-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n2-jitter",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n2-jitter",
+      "count": 2,
+      "layout": "jitter",
+      "slots": [
+        0,
+        1
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.1845176015048187,
+              -0.16241766613921826
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.15829420895517546,
+              0.11743428608913263
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "dd967beb64ade9d9cfaff78d9671b6b8b0e950d6e9a9fa494440b85de71f9312",
+      "initial_state_sha256": "23b5a02a05728e0fead977e7b56723df3f4168fc56833270b1dd87f7536f6bdf",
+      "action_sha256": "0d47c614b3a3bf682a4fdc743b53b4238a8279f134af88c646437ac19c76cb61",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n2-jitter-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n2-jitter-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n2-nominal",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n2-nominal",
+      "count": 2,
+      "layout": "nominal",
+      "slots": [
+        0,
+        1
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 1,
+      "max_placed": 1,
+      "stage_steps": [
+        278
+      ],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.16485018469563242,
+              -0.14895232680682466
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.1691546142171299,
+              0.14957560946487564
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "bc515293854ca9e549e27ce65e11d9484d1ea88cec2aa2b2c2529b12c3434769",
+      "initial_state_sha256": "78a8ce76ec40243f955a6b58939f81dfb29f3d6a34f01dc2c216c42dd308993e",
+      "action_sha256": "f7879232874f8c1e74bfddcc688d4d888b15e8926d68dc419f91abdcc37bdaf4",
+      "count_transitions": [
+        {
+          "after": 1,
+          "before": 0,
+          "control": 278
+        }
+      ],
+      "video": "assets/videos/6200003-physical-n2-nominal-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n2-nominal-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n2-one-sided",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n2-one-sided",
+      "count": 2,
+      "layout": "one-sided",
+      "slots": [
+        0,
+        1
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.1392889853944414,
+              0.2585753945871324
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.10946702009952425,
+              0.09797160580721964
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "8f736214ce167418782c5161e8c0c37da57b0241aaa59e8e30316a03f413e981",
+      "initial_state_sha256": "b6caa449b08151d59351beaef062c319a825be8b875b08218b98d7abf3c8d0b6",
+      "action_sha256": "ac46d5ca4b2845a26898cfa70789ade7bf0fc14053eebbcddc24bc94dbe49180",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n2-one-sided-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n2-one-sided-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n3-cluster",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n3-cluster",
+      "count": 3,
+      "layout": "cluster",
+      "slots": [
+        0,
+        1,
+        2
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.33249959617762875,
+              -0.01800491700388196
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.19926842678730314,
+              -0.0025940442478706166
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.2580884721059643,
+              -0.12284334735478857
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "0febdf2ef55913ad8ab8aab6c7be512083ac3f211e660b19693f130982c14d03",
+      "initial_state_sha256": "fcce611def4e7ec718dfdb6157a8eeb87cdaa44a5c5753d72da8fdd519146a49",
+      "action_sha256": "6654b70bda8f82b7401092fd79869e8138eaa9f41b29158a69e6209b56affc90",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n3-cluster-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n3-cluster-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n3-free",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n3-free",
+      "count": 3,
+      "layout": "free",
+      "slots": [
+        0,
+        1,
+        2
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.3421601071321459,
+              0.1941255164833094
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.22148824449734064,
+              -0.07738356572251653
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.14617567908780582,
+              -0.15196333718395966
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "ce6dbc0238815db3d750d9193824cc7817121d64b42d0124102553c64c539ede",
+      "initial_state_sha256": "e1b6b40aeb2a0a12796bea3981103eb1fe419d49223af12f0dfe30f62d6dbaff",
+      "action_sha256": "38b410870f7a15bc7c6b658d050770b1993c26626a4d1e75fadec05ceb197301",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n3-free-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n3-free-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n3-jitter",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n3-jitter",
+      "count": 3,
+      "layout": "jitter",
+      "slots": [
+        0,
+        1,
+        2
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.1845176015048187,
+              -0.16241766613921826
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.15829420895517546,
+              0.11743428608913263
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.3220298672020839,
+              -0.163207308192735
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "c751b6159a6b4166ce1d3dcf16c204da48b02393691e7b061dfbd747b6d411c3",
+      "initial_state_sha256": "2790a56fada68fbffcda15f2bf7d09e0745669924b5b543ce81650ba36a2954a",
+      "action_sha256": "1ba3dd12b490b30df46e4457a01e5fa24511872dde2bff3ed583d7f81f5b10c9",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n3-jitter-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n3-jitter-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n3-nominal",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n3-nominal",
+      "count": 3,
+      "layout": "nominal",
+      "slots": [
+        0,
+        1,
+        2
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 1,
+      "max_placed": 1,
+      "stage_steps": [
+        246
+      ],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.16485018469563242,
+              -0.14895232680682466
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.1691546142171299,
+              0.14957560946487564
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.336877193303154,
+              -0.14472637631070548
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "a4b94360ea772d671186f2bbbcbeb6939aa4c251c5b495a22131114a73833153",
+      "initial_state_sha256": "bba6457676ace8184d6513cc982aca413dd56c243a29d8f3d127ae2b539b57e6",
+      "action_sha256": "bb00824ff50abaca562842d7c5096e7db363b40fab05eb0499dce5c5553ecedc",
+      "count_transitions": [
+        {
+          "after": 1,
+          "before": 0,
+          "control": 246
+        },
+        {
+          "after": 0,
+          "before": 1,
+          "control": 591
+        },
+        {
+          "after": 1,
+          "before": 0,
+          "control": 600
+        }
+      ],
+      "video": "assets/videos/6200003-physical-n3-nominal-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n3-nominal-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n3-one-sided",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n3-one-sided",
+      "count": 3,
+      "layout": "one-sided",
+      "slots": [
+        0,
+        1,
+        2
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.1392889853944414,
+              0.2585753945871324
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.10946702009952425,
+              0.09797160580721964
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.32753400804054195,
+              0.18873041878613167
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "17befe9b7e0bfc067c4dd7f5debe4af60eb463c95b4f358d84f3ffdf894c2593",
+      "initial_state_sha256": "eca0e85a1d2e17d91529dcc7ff2f32a4e804a1c333d12fcb7b0f6dec87f43917",
+      "action_sha256": "c0641665db3e87e452e9abb12187876f83d532463a66d5bbde74597633e04376",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n3-one-sided-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n3-one-sided-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n4-cluster",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n4-cluster",
+      "count": 4,
+      "layout": "cluster",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.33249959617762875,
+              -0.01800491700388196
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.19926842678730314,
+              -0.0025940442478706166
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.2580884721059643,
+              -0.12284334735478857
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "purple",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.055
+            ],
+            "xy": [
+              -0.34424828893770876,
+              0.06397701633006182
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "d4a075addaeb22c2a2f3c21183bed55ff2c9052083cbb6a2470efdf276cefa7a",
+      "initial_state_sha256": "ec8f345829f23d4879b9a9ff15698e82f47d2748a34e668822e84912b249e9f8",
+      "action_sha256": "b93e22df00684d7c29ffe1bd290361855b54e0d9a7eba9d1b17649401076c452",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n4-cluster-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n4-cluster-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n4-free",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n4-free",
+      "count": 4,
+      "layout": "free",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.3421601071321459,
+              0.1941255164833094
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.22148824449734064,
+              -0.07738356572251653
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.14617567908780582,
+              -0.15196333718395966
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "purple",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.055
+            ],
+            "xy": [
+              -0.29573046016280835,
+              0.07944354873157944
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "84d2352fc01892e41dbd82cb938225a5ccc565475746085128ca47b098f3971e",
+      "initial_state_sha256": "c33b35b9aea4c5c67f456b3b66ac5af6706593f8333f68ddd475466a4b8d808d",
+      "action_sha256": "2bc24532974508a2f2de4de123c1d1763c568f4ac8c207165bfd7cc8cdc451ca",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n4-free-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n4-free-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n4-jitter",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n4-jitter",
+      "count": 4,
+      "layout": "jitter",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.1845176015048187,
+              -0.16241766613921826
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.15829420895517546,
+              0.11743428608913263
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.3220298672020839,
+              -0.163207308192735
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "purple",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.055
+            ],
+            "xy": [
+              -0.36695744030232175,
+              0.1395963089394394
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "1eff3e329fa20db9139a53f3090b43734ce6f09f624f0c6b90abfae6bb7ae137",
+      "initial_state_sha256": "72284fc89f097ce8c5f9183dfceea37d749d06f3ca12b73571bdbdcea646fcce",
+      "action_sha256": "6d658cc12e3ac844667b299bce804d29803c40575e29bd327c2fb302fe2da5da",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n4-jitter-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n4-jitter-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n4-nominal",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n4-nominal",
+      "count": 4,
+      "layout": "nominal",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "success": true,
+      "steps": 1448,
+      "timeout": false,
+      "final_count": 4,
+      "max_placed": 4,
+      "stage_steps": [
+        264,
+        629,
+        995,
+        1439
+      ],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 100,
+        "extra_grasp_controls": 0,
+        "final_count": 4,
+        "tower_damage": false
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.16485018469563242,
+              -0.14895232680682466
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.1691546142171299,
+              0.14957560946487564
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.336877193303154,
+              -0.14472637631070548
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "purple",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.055
+            ],
+            "xy": [
+              -0.3401467344883029,
+              0.152052256889747
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "2b2f38e6a005420daaec1ea6f58430612b261edc5078d0254998c7b7d52dd31f",
+      "initial_state_sha256": "f1e71a91f345c39d8a5095aa1c23c920bfb022186155ec2695e7d6c26a98254b",
+      "action_sha256": "437d96d2f67eb2ce61d7c6fed8e4e3e0e56a20020c2a5e491c0fd90c1fd2f319",
+      "count_transitions": [
+        {
+          "after": 1,
+          "before": 0,
+          "control": 264
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "control": 629
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "control": 995
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1439
+        }
+      ],
+      "video": "assets/videos/6200003-physical-n4-nominal-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n4-nominal-sample0.jpg",
+      "video_frames": 1549,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "6200003-physical-n4-one-sided",
+      "base_scene_id": "6200003",
+      "scene_seed": 6200003,
+      "sample_seed": 0,
+      "condition": "physical-n4-one-sided",
+      "count": 4,
+      "layout": "one-sided",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 0,
+      "max_placed": 0,
+      "stage_steps": [],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5941457926035942,
+        "cube_mass": 0.10408708901890165,
+        "cube_rgb": [
+          0.3209142479202983,
+          0.5581241579595937,
+          0.28538690026687136
+        ],
+        "cube_x": -0.16485018469563242,
+        "cube_y": -0.14895232680682466,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8844340511362782,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.1392889853944414,
+              0.2585753945871324
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.10946702009952425,
+              0.09797160580721964
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.32753400804054195,
+              0.18873041878613167
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "purple",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.055
+            ],
+            "xy": [
+              -0.18892300957216385,
+              0.06695097423893957
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 6200003,
+        "table_rgb": [
+          0.27709631127366624,
+          0.20814857352359623,
+          0.18456442192333833
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "caeee9a89ac619ae6fc1cfa07d3ce9b5c2b8504f7ac89035c4e09efc778c71e0",
+      "initial_state_sha256": "a49ad652b4837ca07f3c816d390b4487627953a98bdf304c75c99640852f29c1",
+      "action_sha256": "5ecbe4ee744b8c5bb8d0e8110bfb337ef57de22d52674d2daebffae5b76d7e96",
+      "count_transitions": [],
+      "video": "assets/videos/6200003-physical-n4-one-sided-sample0.mp4",
+      "poster": "assets/posters/6200003-physical-n4-one-sided-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    }
+  ]
+}

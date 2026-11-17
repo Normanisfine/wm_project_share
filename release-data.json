@@ -1,0 +1,871 @@
+{
+  "source_run": "rs-imle-release-five-video",
+  "protocol": {
+    "adapter": "none",
+    "batch_size": 1,
+    "checkpoint_sha256": "5b61bd48ef0bef312a119b37d6adacd29df2ca3c47bef6849f092692af4d40dc",
+    "continuation": 100,
+    "device": "cuda:0",
+    "hand_assets_sha256": "05b0798d6d90d0aa15ff06109cb1cc5c31b19b37f5fe515796666be8dfceb213",
+    "harness_sha256": "9a99a12dc555a744e72ba401c3083b49b5f488a0a30a8e15ab0dfb8e71dda791",
+    "horizon": 1795,
+    "options": {
+      "ensemble": false,
+      "execute_blocks": 1,
+      "flow_steps": 1,
+      "mode": "policy",
+      "noise_scale": 0.0,
+      "solver": "euler",
+      "time_shift": 1.0
+    },
+    "panel_sha256": "03633bf039aab86c30b124363508bd8039fbb8733f30e666a08dc37ec256512a",
+    "policy": "rs-imle",
+    "purpose": "release_development_sanity",
+    "renderer": "egl",
+    "resolution": 128,
+    "sample_seeds": [
+      0
+    ],
+    "schema": "generalization-run-v1",
+    "selected_seeds": [
+      103002,
+      103026,
+      103032,
+      103039,
+      103084
+    ],
+    "source_commit": "dcaeef333aa530495c094435247309a15d3b4a8b",
+    "success_hold_controls": 10,
+    "video": true,
+    "video_every": 1,
+    "workers": 1
+  },
+  "status_counts": {
+    "completed": 5,
+    "invalid_scene": 0,
+    "runtime_error": 0,
+    "unsupported": 0
+  },
+  "episodes": [
+    {
+      "episode_id": "103002-release-n4-nominal",
+      "base_scene_id": "103002",
+      "scene_seed": 103002,
+      "sample_seed": 0,
+      "condition": "release-n4-nominal",
+      "count": 4,
+      "layout": "nominal",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "success": false,
+      "steps": 1795,
+      "timeout": true,
+      "final_count": 2,
+      "max_placed": 4,
+      "stage_steps": [
+        306,
+        681,
+        1044,
+        1441
+      ],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 0,
+        "extra_grasp_controls": 0,
+        "final_count": null,
+        "tower_damage": null
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.5839188917626713,
+        "cube_mass": 0.10743633378612374,
+        "cube_rgb": [
+          0.49233627278917447,
+          0.6380092465504006,
+          0.8039155389965256
+        ],
+        "cube_x": -0.16605859539762746,
+        "cube_y": -0.1532766570307145,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 1.0993587211613645,
+        "objects": [
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.085
+            ],
+            "xy": [
+              -0.16605859539762746,
+              -0.1532766570307145
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "purple",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.16493912065253857,
+              0.155779860480745
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.055
+            ],
+            "xy": [
+              -0.334206046010144,
+              -0.14404173457952518
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "purple",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.3352819594308779,
+              0.14733405417794646
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 103002,
+        "table_rgb": [
+          0.30390365779091005,
+          0.30910564090098236,
+          0.20605115427596016
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "1901e63e93823d26da04e7727af7b6e1810a24e28245548f255d98599c3c255e",
+      "initial_state_sha256": "fe86e4a31cd0f52c0ebdac5ff0236077225f1c98284097ab1422260018f841e8",
+      "action_sha256": "e95983be51f39d13b082a56553ce45152a8c56461ebaac05010ffd7f5c30c5f6",
+      "count_transitions": [
+        {
+          "after": 1,
+          "before": 0,
+          "control": 306
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "control": 681
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "control": 1044
+        },
+        {
+          "after": 2,
+          "before": 3,
+          "control": 1046
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "control": 1048
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1441
+        },
+        {
+          "after": 3,
+          "before": 4,
+          "control": 1445
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1460
+        },
+        {
+          "after": 2,
+          "before": 4,
+          "control": 1463
+        }
+      ],
+      "video": "assets/videos/103002-release-n4-nominal-sample0.mp4",
+      "poster": "assets/posters/103002-release-n4-nominal-sample0.jpg",
+      "video_frames": 1796,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "103026-release-n4-nominal",
+      "base_scene_id": "103026",
+      "scene_seed": 103026,
+      "sample_seed": 0,
+      "condition": "release-n4-nominal",
+      "count": 4,
+      "layout": "nominal",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "success": true,
+      "steps": 1500,
+      "timeout": false,
+      "final_count": 4,
+      "max_placed": 4,
+      "stage_steps": [
+        291,
+        666,
+        1025,
+        1482
+      ],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 100,
+        "extra_grasp_controls": 0,
+        "final_count": 4,
+        "tower_damage": true
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.4581208528181889,
+        "cube_mass": 0.11124178749149596,
+        "cube_rgb": [
+          0.35490564602778896,
+          0.2615687184680485,
+          0.6221287372861596
+        ],
+        "cube_x": -0.174794586731937,
+        "cube_y": -0.1509733738486559,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.9931477655208161,
+        "objects": [
+          {
+            "material": "purple",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.174794586731937,
+              -0.1509733738486559
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.16556057540604496,
+              0.147692593578672
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.055
+            ],
+            "xy": [
+              -0.34089554379339176,
+              -0.14714960542606212
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.085
+            ],
+            "xy": [
+              -0.34381759539351353,
+              0.15323433654217705
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 103026,
+        "table_rgb": [
+          0.24410261977056869,
+          0.20287841843715396,
+          0.21616735671661214
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "ee67aea7741afa46e1860577aacad4c5e49873064aff83bb39e4a8bb253d7397",
+      "initial_state_sha256": "704bbb29bdb6d54ce8b40e83cb309d93dbd8483770c64ed7dd4f205568c115e9",
+      "action_sha256": "a7af823f2cb09cd5811b721901e2fabe013ff1bc93f1eb766c1cb5e83fd948fd",
+      "count_transitions": [
+        {
+          "after": 1,
+          "before": 0,
+          "control": 291
+        },
+        {
+          "after": 0,
+          "before": 1,
+          "control": 292
+        },
+        {
+          "after": 1,
+          "before": 0,
+          "control": 294
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "control": 666
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "control": 1025
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1482
+        },
+        {
+          "after": 3,
+          "before": 4,
+          "control": 1483
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1486
+        },
+        {
+          "after": 3,
+          "before": 4,
+          "control": 1488
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1491
+        }
+      ],
+      "video": "assets/videos/103026-release-n4-nominal-sample0.mp4",
+      "poster": "assets/posters/103026-release-n4-nominal-sample0.jpg",
+      "video_frames": 1601,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "103032-release-n4-nominal",
+      "base_scene_id": "103032",
+      "scene_seed": 103032,
+      "sample_seed": 0,
+      "condition": "release-n4-nominal",
+      "count": 4,
+      "layout": "nominal",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "success": true,
+      "steps": 1444,
+      "timeout": false,
+      "final_count": 4,
+      "max_placed": 4,
+      "stage_steps": [
+        255,
+        653,
+        999,
+        1435
+      ],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 100,
+        "extra_grasp_controls": 0,
+        "final_count": 4,
+        "tower_damage": false
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.9193893654234901,
+        "cube_mass": 0.08068031829847466,
+        "cube_rgb": [
+          0.2114966857414015,
+          0.24019842623016538,
+          0.45794955253349234
+        ],
+        "cube_x": -0.17140239796456916,
+        "cube_y": -0.14801802490253116,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 1.010371647644674,
+        "objects": [
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.055
+            ],
+            "xy": [
+              -0.17140239796456916,
+              -0.14801802490253116
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.085
+            ],
+            "xy": [
+              -0.1683697853619902,
+              0.15145526695586922
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "purple",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.3371071039645023,
+              -0.1549996000968501
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cube",
+            "size": [
+              0.055,
+              0.055,
+              0.055
+            ],
+            "xy": [
+              -0.3451172548141408,
+              0.1485428801385913
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 103032,
+        "table_rgb": [
+          0.18252052281190764,
+          0.2725818549664636,
+          0.27982529204011786
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "c669850bd5073e96ed822226f6cdf746990c9085fb8ae685cbccb1c425d49975",
+      "initial_state_sha256": "ca86251948bea3e2459e07ca90393dffe89918def36ab31b902102e54241017a",
+      "action_sha256": "74495a1bc2115fdbde3ac917362be65fe0029682ec87e1d3d016ea58c52e3b7f",
+      "count_transitions": [
+        {
+          "after": 1,
+          "before": 0,
+          "control": 255
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "control": 653
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "control": 999
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1435
+        }
+      ],
+      "video": "assets/videos/103032-release-n4-nominal-sample0.mp4",
+      "poster": "assets/posters/103032-release-n4-nominal-sample0.jpg",
+      "video_frames": 1545,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "103039-release-n4-nominal",
+      "base_scene_id": "103039",
+      "scene_seed": 103039,
+      "sample_seed": 0,
+      "condition": "release-n4-nominal",
+      "count": 4,
+      "layout": "nominal",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "success": true,
+      "steps": 1498,
+      "timeout": false,
+      "final_count": 4,
+      "max_placed": 4,
+      "stage_steps": [
+        283,
+        663,
+        1023,
+        1480
+      ],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 100,
+        "extra_grasp_controls": 0,
+        "final_count": 4,
+        "tower_damage": true
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.6080693832842037,
+        "cube_mass": 0.09095971384163462,
+        "cube_rgb": [
+          0.47667456474925723,
+          0.6092991210062673,
+          0.6932991098752976
+        ],
+        "cube_x": -0.17247241277836223,
+        "cube_y": -0.1514046758881066,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.9058328800235901,
+        "objects": [
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.17247241277836223,
+              -0.1514046758881066
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.055
+            ],
+            "xy": [
+              -0.17051208910237706,
+              0.1469019606517787
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.055
+            ],
+            "xy": [
+              -0.3366640117803847,
+              -0.15465705921458472
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "purple",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.085
+            ],
+            "xy": [
+              -0.34162512444994925,
+              0.15498672510129047
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 103039,
+        "table_rgb": [
+          0.25618327663566787,
+          0.2930698951595816,
+          0.31635724459086734
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "293cbb1ba570b61895ee5c8c3ef0796763d433e5a63f9515cd9c23bfce686bd2",
+      "initial_state_sha256": "9049694469adc86f6e6c2740aead1bc44f1311a6b933f4cb246d3fdd19b464e1",
+      "action_sha256": "892e00170b4582f3cdd948743c90d8c0c2ec2fba691949349bc078833be3b8db",
+      "count_transitions": [
+        {
+          "after": 1,
+          "before": 0,
+          "control": 283
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "control": 663
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "control": 1023
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1480
+        },
+        {
+          "after": 3,
+          "before": 4,
+          "control": 1481
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1483
+        },
+        {
+          "after": 3,
+          "before": 4,
+          "control": 1484
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1486
+        },
+        {
+          "after": 3,
+          "before": 4,
+          "control": 1487
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1489
+        }
+      ],
+      "video": "assets/videos/103039-release-n4-nominal-sample0.mp4",
+      "poster": "assets/posters/103039-release-n4-nominal-sample0.jpg",
+      "video_frames": 1599,
+      "video_fps": 10.0
+    },
+    {
+      "episode_id": "103084-release-n4-nominal",
+      "base_scene_id": "103084",
+      "scene_seed": 103084,
+      "sample_seed": 0,
+      "condition": "release-n4-nominal",
+      "count": 4,
+      "layout": "nominal",
+      "slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "success": true,
+      "steps": 1505,
+      "timeout": false,
+      "final_count": 4,
+      "max_placed": 4,
+      "stage_steps": [
+        286,
+        668,
+        1025,
+        1496
+      ],
+      "ground_falls": 0,
+      "continuation": {
+        "absent_slot_visit_controls": 0,
+        "controls": 100,
+        "extra_grasp_controls": 7,
+        "final_count": 4,
+        "tower_damage": true
+      },
+      "status": "completed",
+      "scene": {
+        "cube_edge": 0.055,
+        "cube_friction": 0.8698388894928838,
+        "cube_mass": 0.05710885915034819,
+        "cube_rgb": [
+          0.3714368121465579,
+          0.2045814411887906,
+          0.8369224606988046
+        ],
+        "cube_x": -0.16652345267732072,
+        "cube_y": -0.1529973268068589,
+        "cube_yaw": 0.0,
+        "goal_half_width": 0.085,
+        "goal_x": 0.16,
+        "goal_y": 0.0,
+        "light_scale": 0.8059135917307712,
+        "objects": [
+          {
+            "material": "purple",
+            "shape": "cuboid",
+            "size": [
+              0.055,
+              0.055,
+              0.085
+            ],
+            "xy": [
+              -0.16652345267732072,
+              -0.1529973268068589
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.06,
+              0.06,
+              0.055
+            ],
+            "xy": [
+              -0.17204431848771573,
+              0.15123777120457405
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "orange",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.055
+            ],
+            "xy": [
+              -0.3369575169783533,
+              -0.1514817821913343
+            ],
+            "yaw": 0.0
+          },
+          {
+            "material": "blue",
+            "shape": "cuboid",
+            "size": [
+              0.05,
+              0.05,
+              0.085
+            ],
+            "xy": [
+              -0.33769629575621696,
+              0.14928944245821002
+            ],
+            "yaw": 0.0
+          }
+        ],
+        "seed": 103084,
+        "table_rgb": [
+          0.18335704395299682,
+          0.3060566233947368,
+          0.3058244552442121
+        ],
+        "task_version": 2,
+        "time_limit": 180.0
+      },
+      "scene_sha256": "8676a6f6850e69732e7a8b159b0ac7669763fe0d8dd0f394cc54a2ef9f3f229b",
+      "initial_state_sha256": "82e467ac1c5a9a453aca7c0604ecf748acbfa4055581646c9b3ef4911734de07",
+      "action_sha256": "aed2a1efd88eac528e56438927ed728a861ee0856ab600db439bf12989441b96",
+      "count_transitions": [
+        {
+          "after": 1,
+          "before": 0,
+          "control": 286
+        },
+        {
+          "after": 2,
+          "before": 1,
+          "control": 668
+        },
+        {
+          "after": 3,
+          "before": 2,
+          "control": 1025
+        },
+        {
+          "after": 4,
+          "before": 3,
+          "control": 1496
+        }
+      ],
+      "video": "assets/videos/103084-release-n4-nominal-sample0.mp4",
+      "poster": "assets/posters/103084-release-n4-nominal-sample0.jpg",
+      "video_frames": 1606,
+      "video_fps": 10.0
+    }
+  ]
+}
